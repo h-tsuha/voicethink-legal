@@ -1,0 +1,132 @@
+/* VoiceThink 公開ページ（Privacy Policy / Terms / Account Deletion）共通スタイル。
+   GitHub Pages でそのまま配信する想定の、依存ライブラリ無しの素朴な CSS。 */
+
+:root {
+  color-scheme: light dark;
+  --bg: #f6f5f1;
+  --surface: #ffffff;
+  --ink: #1c1e1c;
+  --ink-soft: #5b5f5a;
+  --line: #dfdcd2;
+  --accent: #28626e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a;
+    --surface: #1c1f23;
+    --ink: #eceae4;
+    --ink-soft: #a9ada8;
+    --line: #2c3034;
+    --accent: #7fc2cf;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic",
+    sans-serif;
+  line-height: 1.8;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+header.page-header {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+header.page-header .brand {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.updated-at {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.draft-notice {
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 14px;
+  margin: 24px 0 40px;
+}
+
+h2 {
+  font-size: 19px;
+  margin: 36px 0 12px;
+  padding-top: 8px;
+}
+
+p, li {
+  font-size: 15.5px;
+  color: var(--ink);
+}
+
+ul, ol {
+  padding-left: 22px;
+}
+
+a {
+  color: var(--accent);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+th {
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.contact-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 20px 0;
+}
+
+nav.legal-nav {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+footer.page-footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
